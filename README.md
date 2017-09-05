@@ -160,6 +160,9 @@ you can even reuse platform's common JS code in single monorepo using
 * ready solutions like [ReactXP](https://microsoft.github.io/reactxp/) ([Skype story](https://microsoft.github.io/reactxp/blog/2017/04/06/introducing-reactxp.html))
 * or find your own solution using [Lerna](https://lernajs.io/)
 
+Smells like future front-end!
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-5VkI0dpHek" frameborder="0" allowfullscreen></iframe>
+
 `Note: if you write games - it's not your story, sorry`
 
 ## Why React? Mature matters!
