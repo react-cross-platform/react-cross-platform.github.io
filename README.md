@@ -8,7 +8,7 @@ For example, E-Shop live demo below is implemented on 3 platforms with shared JS
   <head>
     <style>
       body {
-        background-color: lightcyan;
+        background-color: #ececec;
         color: black;
       }
       .container-lg h1 {
@@ -149,11 +149,6 @@ and use single common GraphQL API
   Iframe isn't supported
 </iframe>
 
-## What is the Tech Stack in this demo?
-
-* Front-End - react, react-native, redux, apollo-client, ant-design-mobile. Written using TypeScript.
-* Back-End - django, graphene, postgresql. Written using Python.
-
 ## How React solve Cross-Platform?
 
 * WEB — [React](https://facebook.github.io/react/)
@@ -175,10 +170,15 @@ Is Electron mature enough for Desktop? If you like VSCode, Atom, Slack or some o
 
 Is React Native mature enough for Mobile? Instagram, Skype, Airbnb, Walmart and [other](https://facebook.github.io/react-native/showcase.html) already use it and you can read how they did it. And if you believe in Facebook - I believe Yes.
 
+## What is the Tech Stack in this demo?
+
+* Front-End - react, react-native, redux, apollo-client, ant-design-mobile. Written using TypeScript.
+* Back-End - django, graphene, postgresql. Written using Python.
+
 ## Ready to fork?
 
-* Mobile WEB - https://github.com/react-cross-platform/react-shop
-* iOS and Android - https://github.com/react-cross-platform/react-native-shop
+* Mobile WEB - [https://github.com/react-cross-platform/react-shop](https://github.com/react-cross-platform/react-shop)
+* iOS and Android - [https://github.com/react-cross-platform/react-native-shop](https://github.com/react-cross-platform/react-native-shop)
 * Cross-platform monorepo with shared JS code - sure some sunny day!
 
 > To Be Continued...
