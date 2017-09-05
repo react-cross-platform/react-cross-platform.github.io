@@ -1,3 +1,5 @@
+# What is Cross-Platform Development?
+
 **Cross-Platform Development** — is to write project that can be implemented on two or more platforms.
 
 For example, E-Shop live demo below is implemented on 3 platforms with shared JS code
@@ -8,6 +10,9 @@ For example, E-Shop live demo below is implemented on 3 platforms with shared JS
       body {
         background-color: lightcyan;
         color: black;
+      }
+      .container-lg h1 {
+        display: none;
       }
       .mobile-demo {
         margin: 2rem 0;
@@ -143,3 +148,37 @@ and use single common GraphQL API
 <iframe src="https://shop.serga.name/graphiql?query=query%20%7B%0A%20%20categories%20%7B%0A%20%20%20%20id%0A%20%20%20%20alias%0A%20%20%7D%0A%7D%0A&variables=%7B%7D" width="100%" height="400">
   Iframe isn't supported
 </iframe>
+
+## What is the Tech Stack in this demo?
+
+* Front-End - react, react-native, redux, apollo-client, ant-design-mobile. Written using TypeScript.
+* Back-End - django, graphene, postgresql. Written using Python.
+
+## How React solve Cross-Platform?
+
+* WEB — [React](https://facebook.github.io/react/)
+* Mobile apps — React + [React Native](https://facebook.github.io/react-native/)
+* Desktop apps — React + [Electron](https://electron.atom.io/)
+
+you can even reuse platform's common JS code in single monorepo using
+
+* ready solutions like [ReactXP](https://microsoft.github.io/reactxp/) ([Skype story](https://microsoft.github.io/reactxp/blog/2017/04/06/introducing-reactxp.html))
+* or find your own solution using [Lerna](https://lernajs.io/)
+
+`Note: if you write games - it's not your story, sorry`
+
+## Why React? Mature matters!
+
+Is React mature enough for WEB? Yes, the most.
+
+Is Electron mature enough for Desktop? If you like VSCode, Atom, Slack or some of [385 apps](https://electron.atom.io/apps/) and believe in GitHub - Yes.
+
+Is React Native mature enough for Mobile? Instagram, Skype, Airbnb, Walmart and [other](https://facebook.github.io/react-native/showcase.html) already use it and you can read how they did it. And if you believe in Facebook - I believe Yes.
+
+## Ready to fork?
+
+* Mobile WEB - https://github.com/react-cross-platform/react-shop
+* iOS and Android - https://github.com/react-cross-platform/react-native-shop
+* Cross-platform monorepo with shared JS code - sure some sunny day!
+
+> To Be Continued...
