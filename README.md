@@ -124,6 +124,17 @@ For example, E-Shop live demo below is implemented on 3 platforms with shared JS
           </section>
         </div>
       </div>
+      <!-- iOS demo -->
+      <div>
+        <div class="title">iOS</div>
+        <iframe
+          src="https://appetize.io/embed/c0au0jv9uhgut98zqm9t8zhn40?device=iphone5s&scale=60&autoplay=false&orientation=portrait&deviceColor=black&language=en" 
+          width="240px" 
+          height="477px" 
+          frameborder="0" 
+          scrolling="no"
+        >Iframe isn't supported</iframe>
+      </div>
       <!-- Adnroid demo -->
       <div>
         <div class="title">Android</div>
@@ -136,17 +147,6 @@ For example, E-Shop live demo below is implemented on 3 platforms with shared JS
         >
           Iframe isn't supported
         </iframe>
-      </div>      
-      <!-- iOS demo -->
-      <div>
-        <div class="title">iOS</div>
-        <iframe
-          src="https://appetize.io/embed/c0au0jv9uhgut98zqm9t8zhn40?device=iphone5s&scale=60&autoplay=false&orientation=portrait&deviceColor=black&language=en" 
-          width="240px" 
-          height="477px" 
-          frameborder="0" 
-          scrolling="no"
-        >Iframe isn't supported</iframe>
       </div>
     </div>
   </body>
