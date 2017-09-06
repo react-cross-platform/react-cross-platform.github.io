@@ -184,10 +184,9 @@ Is React Native mature enough for Mobile? Instagram, Skype, Airbnb, Walmart and 
 
 ## Supported and powered by
 
-<a 
-  style="font-family: Arial; text-decoration: none; cursor: default; color: black"  href="https://www.browserstack.com/">
+<a style="font-family: Arial; text-decoration: none; cursor: default; color: black" href="https://www.browserstack.com/">
   <img style="position: relative; top: 7px; width: 25px" src="./browserstack-logo.png"/>
-  >BrowserStack
+  BrowserStack
 </a> - live, web-based browser testing
 
 > To Be Continued...
