@@ -158,7 +158,7 @@ and use single common GraphQL API
   Iframe isn't supported
 </iframe>
 
-## How React solve Cross-Platform?
+## How React solves Cross-Platform?
 
 * WEB — [React](https://facebook.github.io/react/)
 * Mobile apps — React + [React Native](https://facebook.github.io/react-native/)
