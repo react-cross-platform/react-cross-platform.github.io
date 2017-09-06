@@ -86,6 +86,17 @@ For example, E-Shop live demo below is implemented on 3 platforms with shared JS
       .url-box span {
         padding: 0 10px;
       }
+      .browserstack {
+        font-family: Arial;
+        text-decoration: none;
+      }
+      .browserstack img {
+        background: #ececec;
+        position: relative;
+        top: 7px;
+        width: 25px;
+      }
+
     </style>
   </head>
   <body>
@@ -184,8 +195,8 @@ Is React Native mature enough for Mobile? Instagram, Skype, Airbnb, Walmart and 
 
 ## Supported and powered by
 
-<a style="font-family: Arial; text-decoration: none; cursor: default; color: black" href="https://www.browserstack.com/">
-  <img style="position: relative; top: 7px; width: 25px" src="./browserstack-logo.png"/>
+<a class="browserstack" href="https://www.browserstack.com/">
+  <img class="browser-stack" src="./browserstack-logo.png"/>
   BrowserStack
 </a> - live, web-based browser testing
 
