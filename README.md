@@ -96,7 +96,16 @@ For example, E-Shop live demo below is implemented on 3 platforms with shared JS
         top: 7px;
         width: 25px;
       }
-
+      .appetize {
+        font-family: Arial;
+        text-decoration: none;
+      }
+      .appetize img {
+        background: #ececec;
+        position: relative;
+        top: 7px;
+        width: 25px;
+      }      
     </style>
   </head>
   <body>
@@ -123,6 +132,7 @@ For example, E-Shop live demo below is implemented on 3 platforms with shared JS
             </iframe>
           </section>
         </div>
+        <div>Better look on Phone (https://shop.serga.name)[https://shop.serga.name]
       </div>
       <!-- iOS demo -->
       <div>
@@ -193,11 +203,20 @@ Is React Native mature enough for Mobile? Instagram, Skype, Airbnb, Walmart and 
 * iOS and Android - [https://github.com/react-cross-platform/react-native-shop](https://github.com/react-cross-platform/react-native-shop)
 * Cross-platform monorepo with shared JS code - sure some sunny day!
 
-## Supported and powered by
+## Special thanks to
 
-<a class="browserstack" href="https://www.browserstack.com/">
-  <img class="browser-stack" src="./browserstack-logo.png"/>
-  BrowserStack
-</a> - live, web-based browser testing
+<div>
+  <a class="browserstack" href="https://www.browserstack.com/">
+    <img src="./browserstack-logo.png"/>
+    BrowserStack
+  </a> - live, web-based browser testing
+</div>
+
+<div>
+  <a class="appetize" href="https://appetize.io/">
+    <img src="./appetize-logo.png"/>
+    Appetize
+  </a> - run native mobile apps in your browser
+</div>
 
 > To Be Continued...
