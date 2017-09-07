@@ -204,17 +204,19 @@ Is React Native mature enough for Mobile? Instagram, Skype, Airbnb, Walmart and 
 
 ## Special thanks to
 
-<div>
-  <a class="browserstack" href="https://www.browserstack.com/">
-    <img src="./browserstack-logo.png"/>
-    BrowserStack
-  </a> - live, web-based browser testing
-</div>
-<div>
-  <a class="appetize" href="https://appetize.io/">
-    <img src="./appetize-logo.png"/>
-    Appetize
-  </a> - run native mobile apps in your browser
+<div style="margin-bottom: 2rem">
+  <div>
+    <a class="browserstack" href="https://www.browserstack.com/">
+      <img src="./browserstack-logo.png"/>
+      BrowserStack
+    </a> - live, web-based browser testing
+  </div>
+  <div>
+    <a class="appetize" href="https://appetize.io/">
+      <img src="./appetize-logo.png"/>
+      Appetize
+    </a> - run native mobile apps in your browser
+  </div>
 </div>
 
 > To Be Continued...
