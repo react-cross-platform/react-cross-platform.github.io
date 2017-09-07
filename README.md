@@ -202,7 +202,7 @@ Is React Native mature enough for Mobile? Instagram, Skype, Airbnb, Walmart and 
 * iOS and Android - [https://github.com/react-cross-platform/react-native-shop](https://github.com/react-cross-platform/react-native-shop)
 * Cross-platform monorepo with shared JS code - sure some sunny day!
 
-## Special thanks to
+## Sponsorship
 
 <div style="margin-bottom: 2rem">
   <div>
