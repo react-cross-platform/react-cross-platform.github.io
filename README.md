@@ -1,13 +1,13 @@
 <style>
   body {
-    background: black;
-    color: black;
+    /* color: black; */
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1012px;
     margin: auto;
   }
-
+  .demo {
+  }
   .container-lg {
     max-width: 1012px;
     margin-right: auto;
@@ -56,8 +56,9 @@
 
   .web-wrapper {
     margin: 0 auto;
-    border: 1px solid #575757;
+    border: 1px solid grey;
     border-radius: 30px;
+    background: black;
     padding: 25px 15px
   }
 
@@ -105,12 +106,12 @@
   /* GraphQL API */
 
   .graphql-demo {
-    margin: 2rem 0;
+    margin: 3rem 0;
   }
 
   .graphql-demo iframe {
     width: 101%;
-    height: 400;
+    height: 600px;
     border-radius: 0.4rem;
   }
   /* Browserstack */
@@ -139,9 +140,19 @@
     top: 7px;
     width: 25px;
   }
+
+  /* about */
+  .about {
+    height: 100px; 
+    color: black;
+  }
+  .about div {
+    font-family: monospace;
+  }
+
 </style>
 
-<div>
+<div class="demo">
   <div class="mobile-demo">
     <!-- WEB demo -->
     <div class="web-demo">
@@ -164,36 +175,36 @@
     </div>
     <div>
       <!-- About -->
-      <div style="height: 100px; margin: 0.5rem 0; color: white">
-        <div style="font-size: 2.9rem; text-shadow: 1px 1px 1px gray; font-family: monospace">React Cross-Platform</div>
-        <div style="font-size: 1.2rem; color: gray">1 project with shared JS code = 3 platforms</div>
+      <div class="about">
+        <div style="font-size: 2.6rem; text-shadow: 1px 1px 1px gray">React Cross-Platform</div>
+        <div style="font-size: 1.21rem; color: gray">1 project with shared JS code = 3 platforms</div>
       </div>
       <div style="display: flex; justify-content: space-evenly; width: 800">
-        <!-- Adnroid demo -->
-        <div>
-          <div class="iframe-title">Android</div>
-          <iframe src="https://appetize.io/embed/edrtcxb7wqu1cgny78wu9av4dc?device=nexus5&scale=60&autoplay=false&orientation=portrait&deviceColor=black&language=en"
-            width="240px" height="477px" frameborder="0" scrolling="no">
-            Iframe isn't supported
-          </iframe>
-        </div>
         <!-- iOS demo -->
         <div>
-          <div class="iframe-title">iOS</div>
-          <iframe src="https://appetize.io/embed/c0au0jv9uhgut98zqm9t8zhn40?device=iphone5s&scale=61&autoplay=false&orientation=portrait&deviceColor=white&language=en"
-            width="240px" height="477px" frameborder="0" scrolling="no">Iframe isn't supported</iframe>
+          <div style="margin-top: 10px" class="iframe-title">iOS</div>
+          <iframe src="https://appetize.io/embed/c0au0jv9uhgut98zqm9t8zhn40?device=iphone5s&scale=62&autoplay=false&orientation=portrait&deviceColor=white&language=en"
+            width="240px" height="490px" frameborder="0" scrolling="no">Iframe isn't supported</iframe>
         </div>
-      </div>
+        <!-- Adnroid demo -->
+        <div>
+            <div class="iframe-title">Android</div>
+            <iframe src="https://appetize.io/embed/edrtcxb7wqu1cgny78wu9av4dc?device=nexus5&scale=60&autoplay=false&orientation=portrait&deviceColor=black&language=en"
+              width="240px" height="477px" frameborder="0" scrolling="no">
+              Iframe isn't supported
+            </iframe>
+          </div>
+        </div>
     </div>
+  </div>
+  <div class="graphql-demo">
+    <div class="iframe-title">+ single GraphQL API</div>
+    <iframe src="https://shop.serga.name/graphiql?query=query%20%7B%0A%20%20categories%20%7B%0A%20%20%20%20id%0A%20%20%20%20alias%0A%20%20%7D%0A%7D%0A&variables=%7B%7D">
+      Iframe isn't supported
+    </iframe>
   </div>
 </div>
 
-<div class="graphql-demo">
-  <div class="iframe-title">+ single GraphQL API</div>
-  <iframe src="https://shop.serga.name/graphiql?query=query%20%7B%0A%20%20categories%20%7B%0A%20%20%20%20id%0A%20%20%20%20alias%0A%20%20%7D%0A%7D%0A&variables=%7B%7D">
-    Iframe isn't supported
-  </iframe>
-</div>
 
 ## How React solves Cross-Platform?
 
