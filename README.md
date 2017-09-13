@@ -1,9 +1,3 @@
-# What is Cross-Platform Development?
-
-**Cross-Platform Development** — is to write project that can be implemented on two or more platforms.
-
-For example, E-Shop live demo below is implemented on 3 platforms with shared JS code
-
 <style>
   body {
     background: black;
@@ -12,11 +6,12 @@ For example, E-Shop live demo below is implemented on 3 platforms with shared JS
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  <!-- .container-lg {
+  .container-lg {
     max-width: 1012px;
     margin-right: auto;
     margin-left: auto;
-  } -->
+    margin-top: 0 !important;
+  }
 
   .container-lg h1 {
     display: none;
@@ -177,8 +172,6 @@ For example, E-Shop live demo below is implemented on 3 platforms with shared JS
     </div>
   </div>
 </div>
-
-and use single common GraphQL API
 
 <iframe src="https://shop.serga.name/graphiql?query=query%20%7B%0A%20%20categories%20%7B%0A%20%20%20%20id%0A%20%20%20%20alias%0A%20%20%7D%0A%7D%0A&variables=%7B%7D" width="100%" height="400">
   Iframe isn't supported
