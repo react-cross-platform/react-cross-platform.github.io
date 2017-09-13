@@ -4,162 +4,179 @@
 
 For example, E-Shop live demo below is implemented on 3 platforms with shared JS code
 
-<html>
-  <head>
-    <style>
-      body {
-        background-color: #ececec;
-        color: black;
-      }
-      .container-lg h1 {
-        display: none;
-      }
-      .mobile-demo {
-        margin: 2rem 0;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        text-align: center;
-        height: 535px;
-      }
-      .mobile-demo .title {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-      }
-      .web-demo {
-        transform: scale(0.79);
-        transform-origin: top center;
-      }
-      .web-header {
-        border-right: 2px solid #545456;
-        border-top: 2px solid #545456;
-        border-left: 2px solid #545456;
-        box-shadow: rgb(235, 235, 235) 0px 2px 4px;
-      }
-      .web-demo .title {
-        font-size: 2rem !important;
-      }
-      .web-wrapper {
-        margin: 0 auto;
-        border: 5px;
-        border-radius: 5px;
-        border-color: black;
-      }      
-      .web-wrapper iframe {
-        width: 320px;
-        height: 535px;
-        border-top: none;
-        border-right: 2px solid #545456;
-        border-bottom: 2px solid #545456;
-        border-left: 2px solid #545456;
-        border-image: initial;
-        box-shadow: rgb(235, 235, 235) 0px 2px 4px;
-      }
-      .web-header {
-        border-radius: 4px 4px 0 0;
-        background: -webkit-linear-gradient(rgba(55,55,55,.98),#545456);
-        background: linear-gradient(rgba(55,55,55,.98),#545456);
-        text-align: center;
-      }
-      .web-statbar {
-        height: 20px;
-        margin-bottom: 4px;
-      }
-      .web-statbar img {
-        border-style: none;
-        margin: 7px 2px;
-        background-color: transparent;
-      }
-      .url-box {
-        width: 300px;
-        height: 28px;
-        line-height: 28px;
-        color: #fff;
-        background-color: #a2a2a2;
-        margin: 0 auto;
-        border-radius: 4px;
-        white-space: nowrap;
-        overflow-x: scroll;
-        text-align: left;
-        font-size: 14px;
-      }
-      .url-box span {
-        padding: 0 10px;
-      }
-      .browserstack {
-        font-family: Arial;
-        text-decoration: none;
-      }
-      .browserstack img {
-        background: #ececec;
-        position: relative;
-        top: 7px;
-        width: 25px;
-      }
-      .appetize {
-        font-family: Arial;
-        text-decoration: none;
-      }
-      .appetize img {
-        background: #ececec;
-        position: relative;
-        top: 7px;
-        width: 25px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="mobile-demo">
-      <!-- WEB demo -->
-      <div class="web-demo">
-        <div class="title">Mobile WEB</div>
-        <div class="web-wrapper">
-          <div class="web-header">
-            <div class="web-statbar">
-              <img
-                width="250"
-                alt="presentation"
-                src="https://os.alipayobjects.com/rmsportal/VfVHYcSUxreetec.png"
-              />
-            </div>
-            <div style="height: 40px">
-              <div class="url-box"><span>https://shop.serga.name/</span></div>
-            </div>
+<style>
+  body {
+    background: black;
+    color: black;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  <!-- .container-lg {
+    max-width: 1012px;
+    margin-right: auto;
+    margin-left: auto;
+  } -->
+
+  .container-lg h1 {
+    display: none;
+  }
+
+  .mobile-demo {
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+  }
+
+  .mobile-demo .title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    width: 100%;
+    color:gray;
+  }
+
+  .web-demo {
+    /* transform: scale(0.95); */
+    transform-origin: top center;
+    text-align: center;
+  }
+
+  .web-header {
+    border-right: 1px solid #545456;
+    border-top: 1px solid #545456;
+    border-left: 1px solid #545456;
+    /* box-shadow: rgb(235, 235, 235) 0px 2px 4px; */
+  }
+
+  .web-demo .title {
+    font-size: 1.3rem !important;
+    clear: both;
+    margin-top: 1rem;
+  }
+
+  .web-wrapper {
+    margin: 0 auto;
+    border: 1px solid #575757;
+    border-radius: 30px;
+    padding: 25px 15px
+  }
+
+  .web-wrapper iframe {
+    width: 320px;
+    height: 67%;
+    border: 0;
+  }
+
+  .web-header {
+    background: -webkit-linear-gradient(rgba(55, 55, 55, .98), #545456);
+    background: linear-gradient(rgba(55, 55, 55, .98), #545456);
+    text-align: center;
+  }
+
+  .web-statbar {
+    height: 20px;
+    margin-bottom: 4px;
+  }
+
+  .web-statbar img {
+    border-style: none;
+    margin: 7px 2px;
+    background-color: transparent;
+    width: 300px;
+  }
+
+  .url-box {
+    width: 300px;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    background-color: #a2a2a2;
+    margin: 0 auto;
+    border-radius: 4px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .url-box span {
+    padding: 0 10px;
+  }
+
+  .browserstack {
+    font-family: Arial;
+    text-decoration: none;
+  }
+
+  .browserstack img {
+    background: #ececec;
+    position: relative;
+    top: 7px;
+    width: 25px;
+  }
+
+  .appetize {
+    font-family: Arial;
+    text-decoration: none;
+  }
+
+  .appetize img {
+    background: #ececec;
+    position: relative;
+    top: 7px;
+    width: 25px;
+  }
+</style>
+
+<div>
+  <div class="mobile-demo">
+    <!-- WEB demo -->
+    <div class="web-demo">
+      <div class="title">Mobile WEB</div>
+      <div class="web-wrapper">
+        <div class="web-header">
+          <div class="web-statbar">
+            <img width="250" alt="presentation" src="https://os.alipayobjects.com/rmsportal/VfVHYcSUxreetec.png" />
           </div>
-          <section>
-            <iframe src="https://shop.serga.name">
-              Iframe isn't supported
-            </iframe>
-          </section>
+          <div style="height: 40px">
+            <div class="url-box"><span>https://shop.serga.name/</span></div>
+          </div>
         </div>
-      </div>
-      <!-- iOS demo -->
-      <div>
-        <div class="title">iOS</div>
-        <iframe
-          src="https://appetize.io/embed/c0au0jv9uhgut98zqm9t8zhn40?device=iphone5s&scale=60&autoplay=false&orientation=portrait&deviceColor=black&language=en" 
-          width="240px" 
-          height="477px" 
-          frameborder="0" 
-          scrolling="no"
-        >Iframe isn't supported</iframe>
-      </div>
-      <!-- Adnroid demo -->
-      <div>
-        <div class="title">Android</div>
-        <iframe
-          src="https://appetize.io/embed/edrtcxb7wqu1cgny78wu9av4dc?device=nexus5&scale=60&autoplay=false&orientation=portrait&deviceColor=white&language=en"
-          width="240px" 
-          height="477px"
-          frameborder="0"
-          scrolling="no"
-        >
-          Iframe isn't supported
-        </iframe>
+        <section>
+          <iframe src="https://shop.serga.name">
+            Iframe isn't supported
+          </iframe>
+        </section>
       </div>
     </div>
-  </body>
-</html>
+    <div>
+      <!-- About -->
+      <div style="height: 100px; margin: 0.5rem 0; color: white">
+        <div style="font-size: 2.9rem; text-shadow: 1px 1px 1px gray; font-family: monospace">React Cross-Platform</div>
+        <div style="font-size: 1.2rem; color: gray">1 project with shared JS code + single GraphQL API = 3 platforms</div>
+      </div>
+      <div style="display: flex; justify-content: space-evenly; width: 800">
+        <!-- Adnroid demo -->
+        <div>
+          <div class="title">Android</div>
+          <iframe src="https://appetize.io/embed/edrtcxb7wqu1cgny78wu9av4dc?device=nexus5&scale=60&autoplay=false&orientation=portrait&deviceColor=black&language=en"
+            width="240px" height="477px" frameborder="0" scrolling="no">
+            Iframe isn't supported
+          </iframe>
+        </div>
+        <!-- iOS demo -->
+        <div>
+            <div class="title">iOS</div>
+            <iframe src="https://appetize.io/embed/c0au0jv9uhgut98zqm9t8zhn40?device=iphone5s&scale=61&autoplay=false&orientation=portrait&deviceColor=white&language=en"
+              width="240px" height="477px" frameborder="0" scrolling="no">Iframe isn't supported</iframe>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 and use single common GraphQL API
 
