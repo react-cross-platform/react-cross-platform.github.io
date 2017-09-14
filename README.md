@@ -238,6 +238,11 @@ Is React Native mature enough for Mobile? Instagram, Skype, Airbnb, Walmart and 
 * Front-End - react, react-native, redux, apollo-client, ant-design-mobile. Written using TypeScript.
 * Back-End - django, graphene, postgresql. Written using Python.
 
+## Who is coding this way?
+
+* [Build Wix app for 80 million users](https://www.youtube.com/watch?v=abSNo2P9mMM&feature=youtu.be)
+* [Build Skype with ReactXP](https://microsoft.github.io/reactxp/blog/2017/04/06/introducing-reactxp.html)
+
 ## Fork me!
 
 * Mobile WEB - [https://github.com/react-cross-platform/react-shop](https://github.com/react-cross-platform/react-shop)
