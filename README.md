@@ -5,8 +5,12 @@
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1012px;
     margin: auto;
-  }
-  .demo {
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
   }
   .container-lg {
     max-width: 1012px;
@@ -28,15 +32,9 @@
     color: white;
   }
 
-  .mobile-demo .title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    width: 100%;
-    color: gray;
-  }
-
   .web-demo {
     /* transform: scale(0.95); */
+    margin-top: 0.27rem;
     transform-origin: top center;
     text-align: center;
   }
@@ -49,9 +47,10 @@
   }
 
   .iframe-title {
-    font-size: 1.3rem !important;
-    margin: 1rem 0;
-    color: gray;
+    font-size: 1.2rem !important;
+    margin: 0.5rem 0;
+    /* color: gray; */
+    color: white;
   }
 
   .web-wrapper {
@@ -112,7 +111,7 @@
   .graphql-demo iframe {
     width: 101%;
     height: 600px;
-    border-radius: 0.4rem;
+    border-radius: 0.5rem;
   }
   /* Browserstack */
 
@@ -151,9 +150,12 @@
   .android-demo, .ios-demo {
     margin: 0 1rem;
   }
+  .ios-demo {
+    position: relative;
+    bottom: 7px;
 
+  }
 </style>
-
 <div class="demo">
   <div class="mobile-demo">
     <!-- WEB demo -->
@@ -178,13 +180,13 @@
     <div>
       <!-- About -->
       <div class="about">
-        <div style="font-size: 2.6rem; text-shadow: 1px 1px 1px gray">React Cross-Platform</div>
-        <div style="font-size: 1.21rem; color: gray">1 project with shared JS code = 3 platforms</div>
+        <div style="font-size: 2.6rem; color: white; text-shadow: 1px 1px 1px gray">React Cross-Platform</div>
+        <div style="font-size: 1.21rem; color: black">1 project with shared JS code = 3 platforms</div>
       </div>
       <div style="display: flex; justify-content: center; width: 800">
         <!-- iOS demo -->
         <div class="ios-demo">
-          <div style="margin-top: 10px" class="iframe-title">iOS</div>
+          <div class="iframe-title">iOS</div>
           <iframe src="https://appetize.io/embed/c0au0jv9uhgut98zqm9t8zhn40?device=iphone5s&scale=62&autoplay=false&orientation=portrait&deviceColor=white&language=en"
             width="240px" height="490px" frameborder="0" scrolling="no">Iframe isn't supported</iframe>
         </div>
@@ -206,6 +208,7 @@
     </iframe>
   </div>
 </div>
+
 
 
 ## How React solves Cross-Platform?
