@@ -122,7 +122,6 @@
   }
 
   .browserstack img {
-    background: #ececec;
     position: relative;
     top: 7px;
     width: 25px;
@@ -135,7 +134,6 @@
   }
 
   .appetize img {
-    background: #ececec;
     position: relative;
     top: 7px;
     width: 25px;
