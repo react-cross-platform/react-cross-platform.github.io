@@ -217,7 +217,7 @@
 
 you can even reuse platform's common JS code in single monorepo using
 
-* ready solutions like [ReactXP](https://microsoft.github.io/reactxp/) ([Skype story](https://microsoft.github.io/reactxp/blog/2017/04/06/introducing-reactxp.html))
+* ready solutions like [ReactXP](https://microsoft.github.io/reactxp/)
 * or find your own solution using [Lerna](https://lernajs.io/)
 
 Smells like future front-end!
