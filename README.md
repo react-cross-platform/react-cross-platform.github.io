@@ -181,7 +181,7 @@
       <!-- About -->
       <div class="about">
         <div style="font-size: 2.6rem; color: white; text-shadow: 1px 1px 1px gray">React Cross-Platform</div>
-        <div style="font-size: 1.21rem; color: black">1 project with shared JS code = 3 platforms</div>
+        <div style="font-size: 1.21rem; color: black; line-height: 0.5rem">1 project with shared JS code = 3 platforms</div>
       </div>
       <div style="display: flex; justify-content: center; width: 800">
         <!-- iOS demo -->
@@ -208,8 +208,6 @@
     </iframe>
   </div>
 </div>
-
-
 
 ## How React solves Cross-Platform?
 
