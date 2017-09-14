@@ -150,6 +150,10 @@
     font-family: monospace;
   }
 
+  .android-demo, .ios-demo {
+    margin: 0 1rem;
+  }
+
 </style>
 
 <div class="demo">
@@ -179,15 +183,15 @@
         <div style="font-size: 2.6rem; text-shadow: 1px 1px 1px gray">React Cross-Platform</div>
         <div style="font-size: 1.21rem; color: gray">1 project with shared JS code = 3 platforms</div>
       </div>
-      <div style="display: flex; justify-content: space-evenly; width: 800">
+      <div style="display: flex; justify-content: center; width: 800">
         <!-- iOS demo -->
-        <div>
+        <div class="ios-demo">
           <div style="margin-top: 10px" class="iframe-title">iOS</div>
           <iframe src="https://appetize.io/embed/c0au0jv9uhgut98zqm9t8zhn40?device=iphone5s&scale=62&autoplay=false&orientation=portrait&deviceColor=white&language=en"
             width="240px" height="490px" frameborder="0" scrolling="no">Iframe isn't supported</iframe>
         </div>
         <!-- Adnroid demo -->
-        <div>
+        <div class="android-demo">
             <div class="iframe-title">Android</div>
             <iframe src="https://appetize.io/embed/edrtcxb7wqu1cgny78wu9av4dc?device=nexus5&scale=60&autoplay=false&orientation=portrait&deviceColor=black&language=en"
               width="240px" height="477px" frameborder="0" scrolling="no">
@@ -204,6 +208,7 @@
     </iframe>
   </div>
 </div>
+
 
 
 ## How React solves Cross-Platform?
