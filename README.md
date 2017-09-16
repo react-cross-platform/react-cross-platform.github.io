@@ -5,13 +5,24 @@
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1012px;
     margin: auto;
-
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+97&0.65+0,0+45 */
-    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 45%, rgba(0,0,0,0) 97%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 45%,rgba(0,0,0,0) 97%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 45%,rgba(0,0,0,0) 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    overflow-x: hidden;
   }
+
+  .body-dark {
+    background: #353535;
+    -webkit-transition: 0.5s;
+    /* Safari */
+    transition: 0.5s;
+  }
+
+  .body-dark-fixed {
+    background: #353535;
+    overflow: hidden;
+    -webkit-transition: 0.5s;
+    /* Safari */
+    transition: 0.5s;
+  }
+
   .container-lg {
     max-width: 1012px;
     margin-right: auto;
@@ -32,9 +43,8 @@
     color: white;
   }
 
-  .web-demo {
+  #web-demo {
     /* transform: scale(0.95); */
-    margin-top: 0.27rem;
     transform-origin: top center;
     text-align: center;
   }
@@ -58,12 +68,14 @@
     border: 1px solid grey;
     border-radius: 30px;
     background: black;
-    padding: 25px 15px
+    padding: 25px 15px;
+    opacity: 1 !important;
+    z-index: 100;
   }
 
   .web-wrapper iframe {
     width: 320px;
-    height: 458px;
+    height: 463px;
     border: 0;
   }
 
@@ -137,31 +149,33 @@
     top: 7px;
     width: 25px;
   }
-
   /* about */
+
   .about {
-    height: 100px; 
+    height: 100px;
     color: black;
   }
+
   .about div {
     font-family: monospace;
   }
 
-  .android-demo, .ios-demo {
+  #android-demo,
+  #ios-demo {
     margin: 0 1rem;
   }
-  .ios-demo {
+
+  #ios-demo {
     position: relative;
     bottom: 7px;
-
   }
 </style>
-<div class="demo">
+<div>
   <div class="mobile-demo">
     <!-- WEB demo -->
-    <div class="web-demo">
+    <div>
       <div class="iframe-title">Mobile WEB</div>
-      <div class="web-wrapper">
+      <div id="web-demo" class="web-wrapper">
         <div class="web-header">
           <div class="web-statbar">
             <img width="250" alt="presentation" src="https://os.alipayobjects.com/rmsportal/VfVHYcSUxreetec.png" />
@@ -171,7 +185,7 @@
           </div>
         </div>
         <section>
-          <iframe src="https://shop.serga.name">
+          <iframe scrolling="no" src="https://shop.serga.name">
             Iframe isn't supported
           </iframe>
         </section>
@@ -180,34 +194,47 @@
     <div>
       <!-- About -->
       <div class="about">
-        <div style="font-size: 2.6rem; color: white; text-shadow: 1px 1px 1px gray">React Cross-Platform</div>
+        <div style="font-size: 2.6rem; color: black">React Cross-Platform</div>
         <div style="font-size: 1.21rem; color: black; line-height: 0.5rem">1 project with shared JS code = 3 platforms</div>
       </div>
       <div style="display: flex; justify-content: center; width: 800">
         <!-- iOS demo -->
-        <div class="ios-demo">
+        <div id="ios-demo">
           <div class="iframe-title">iOS</div>
-          <iframe src="https://appetize.io/embed/c0au0jv9uhgut98zqm9t8zhn40?device=iphone5s&scale=62&autoplay=false&orientation=portrait&deviceColor=white&language=en"
+          <iframe id="ios-memo" src="https://appetize.io/embed/c0au0jv9uhgut98zqm9t8zhn40?device=iphone5s&scale=62&autoplay=false&orientation=portrait&deviceColor=white&language=en"
             width="240px" height="490px" frameborder="0" scrolling="no">Iframe isn't supported</iframe>
         </div>
         <!-- Adnroid demo -->
         <div class="android-demo">
-            <div class="iframe-title">Android</div>
-            <iframe src="https://appetize.io/embed/edrtcxb7wqu1cgny78wu9av4dc?device=nexus5&scale=60&autoplay=false&orientation=portrait&deviceColor=black&language=en"
-              width="240px" height="477px" frameborder="0" scrolling="no">
-              Iframe isn't supported
-            </iframe>
-          </div>
+          <div class="iframe-title">Android</div>
+          <iframe id="android-demo" src="https://appetize.io/embed/edrtcxb7wqu1cgny78wu9av4dc?device=nexus5&scale=60&autoplay=false&orientation=portrait&deviceColor=black&language=en"
+            width="240px" height="477px" frameborder="0" scrolling="no">
+            Iframe isn't supported
+          </iframe>
         </div>
+      </div>
     </div>
   </div>
   <div class="graphql-demo">
     <div class="iframe-title">+ single GraphQL API</div>
-    <iframe src="https://shop.serga.name/graphiql?query=query%20%7B%0A%20%20categories%20%7B%0A%20%20%20%20id%0A%20%20%20%20alias%0A%20%20%7D%0A%7D%0A&variables=%7B%7D">
+    <iframe id="graphql-demo" src="https://shop.serga.name/graphiql?query=query%20%7B%0A%20%20categories%20%7B%0A%20%20%20%20id%0A%20%20%20%20alias%0A%20%20%7D%0A%7D%0A&variables=%7B%7D">
       Iframe isn't supported
     </iframe>
   </div>
 </div>
+<script>
+  function setClass(className) {
+    document.body.className = className;
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    ids = ['web-demo', 'android-demo', 'ios-demo', 'graphql-demo'];
+    for (id of ids) {
+      const className = id == 'web-demo' ? "body-dark-fixed" : "body-dark";
+      document.getElementById(id).addEventListener("mouseover", () => setClass(className), false)
+      document.getElementById(id).addEventListener("mouseout", () => setClass(""), false)
+    }
+  });
+</script>
 
 ## How React solves Cross-Platform?
 
