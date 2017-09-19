@@ -216,7 +216,7 @@
     </div>
   </div>
   <div class="graphql-demo">
-    <div class="iframe-title">+ single GraphQL API</div>
+    <div class="iframe-title">+ single GraphQL API (schema online demo <a href="https://react-cross-platform.github.io/voyager/">here</a>)</div>
     <iframe id="graphql-demo" src="https://shop.serga.name/graphiql?query=query%20%7B%0A%20%20categories%20%7B%0A%20%20%20%20id%0A%20%20%20%20alias%0A%20%20%7D%0A%7D%0A&variables=%7B%7D">
       Iframe isn't supported
     </iframe>
