@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="http://cdn.jsdelivr.net/react/15.4.2/react.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/react/15.4.2/react-dom.min.js"></script>
+
+  <link rel="stylesheet" href="dist/voyager.css" />
+  <script src="dist/voyager.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://apis.guru/graphql-voyager/releases/v1.x/voyager.css" />
+  <script src="https://apis.guru/graphql-voyager/releases/v1.x/voyager.min.js"></script> -->
+</head>
+
+<body>
+  <div id="voyager">Loading...</div>
+  <script>
+    function introspectionProvider(query) {
+      return fetch('https://shop.serga.name/graphql', {
+        method: 'post',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          query: query
+        }),
+      }).then(response => response.json());
+    }
+
+    // Render <Voyager />
+    GraphQLVoyager.init(document.getElementById('voyager'), {
+      introspection: introspectionProvider
+    })
+  </script>
+</body>
+
+</html>
