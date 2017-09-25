@@ -181,11 +181,11 @@
             <img width="250" alt="presentation" src="https://os.alipayobjects.com/rmsportal/VfVHYcSUxreetec.png" />
           </div>
           <div style="height: 40px">
-            <div class="url-box"><span>http://shop.serga.name/</span></div>
+            <div class="url-box"><span>https://shop.serga.name/</span></div>
           </div>
         </div>
         <section>
-          <iframe scrolling="no" src="http://shop.serga.name">
+          <iframe scrolling="no" src="https://shop.serga.name">
             Iframe isn't supported
           </iframe>
         </section>
