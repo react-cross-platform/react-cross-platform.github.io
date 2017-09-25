@@ -185,7 +185,7 @@
           </div>
         </div>
         <section>
-          <iframe scrolling="no" src="https://shop.serga.name">
+          <iframe scrolling="no" src="http://shop.serga.name">
             Iframe isn't supported
           </iframe>
         </section>
