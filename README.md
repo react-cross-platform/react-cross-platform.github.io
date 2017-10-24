@@ -181,11 +181,11 @@
             <img width="250" alt="presentation" src="https://os.alipayobjects.com/rmsportal/VfVHYcSUxreetec.png" />
           </div>
           <div style="height: 40px">
-            <div class="url-box"><span>http://shop.serga.name/</span></div>
+            <div class="url-box"><span>https://shop.serga.name/</span></div>
           </div>
         </div>
         <section>
-          <iframe scrolling="no" src="http://shop.serga.name">
+          <iframe scrolling="no" src="https://shop.serga.name">
             Iframe isn't supported
           </iframe>
         </section>
@@ -217,7 +217,7 @@
   </div>
   <div class="graphql-demo">
     <div class="iframe-title" style="color:black">+ single GraphQL API (schema online demo <a href="https://react-cross-platform.github.io/voyager/">here</a>)</div>
-    <iframe id="graphql-demo" src="http://shop.serga.name/graphiql?query=query%20%7B%0A%20%20categories%20%7B%0A%20%20%20%20id%0A%20%20%20%20alias%0A%20%20%7D%0A%7D%0A&variables=%7B%7D">
+    <iframe id="graphql-demo" src="https://shop.serga.name/graphiql?query=query%20%7B%0A%20%20categories%20%7B%0A%20%20%20%20id%0A%20%20%20%20alias%0A%20%20%7D%0A%7D%0A&variables=%7B%7D">
       Iframe isn't supported
     </iframe>
   </div>
