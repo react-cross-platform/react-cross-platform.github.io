@@ -267,7 +267,6 @@ Is React Native mature enough for Mobile? If you like Facebook, Instagram, Skype
 * [Twitter (using react-native-web)](https://www.youtube.com/watch?v=tFFn39lLO-U)
 * [Airbnb (using react-primitives)](https://www.youtube.com/watch?v=8qCociUB6aQ)
 
-
 ## Demo Tech Stack
 
 * Front-End - react, react-native, redux, apollo-client. Written using TypeScript.
@@ -275,9 +274,10 @@ Is React Native mature enough for Mobile? If you like Facebook, Instagram, Skype
 
 ## Fork me!
 
-* Cross-platform ReactXP monorepo (WEB, iOS, Android) - [https://github.com/react-cross-platform/reactxp-shop](https://github.com/react-cross-platform/reactxp-shop)
-* Mobile WEB only - [https://github.com/react-cross-platform/react-shop](https://github.com/react-cross-platform/react-shop)
-* iOS and Android only - [https://github.com/react-cross-platform/react-native-shop](https://github.com/react-cross-platform/react-native-shop)
+* Cross-platform ReactXP monorepo (WEB, iOS, Android) - [reactxp-shop](https://github.com/react-cross-platform/reactxp-shop)
+* deprecated cause [reactxp-shop](https://github.com/react-cross-platform/reactxp-shop):
+  * Mobile WEB only - [react-shop](https://github.com/react-cross-platform/react-shop)
+  * iOS and Android only - [react-native-shop](https://github.com/react-cross-platform/react-native-shop)
 
 ## Sponsorship
 
@@ -292,7 +292,7 @@ Is React Native mature enough for Mobile? If you like Facebook, Instagram, Skype
     <a class="appetize" href="https://appetize.io/">
       <img src="./appetize-logo.png"/>
       Appetize
-    </a> - run native mobile apps in your browser
+    </a> - cenative mobile apps in your browser
   </div>
 </div>
 
