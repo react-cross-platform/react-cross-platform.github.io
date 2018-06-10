@@ -195,7 +195,7 @@
       <!-- About -->
       <div class="about">
         <div style="font-size: 2.6rem; color: black">React Cross-Platform</div>
-        <div style="font-size: 1.21rem; color: black; line-height: 0.5rem">1 project with shared JS code = 3 platforms</div>
+        <div style="font-size: 1.21rem; color: black; line-height: 0.5rem">Write once, render anywhere</div>
       </div>
       <div style="display: flex; justify-content: center; width: 800">
         <!-- iOS demo -->
@@ -242,10 +242,10 @@
 * Mobile apps — React + [React Native](https://facebook.github.io/react-native/)
 * Desktop apps — React + [Electron](https://electron.atom.io/)
 
-you can even reuse platform's common JS code in single monorepo using
+you even write once, render anywhere
 
-* ready solutions like [ReactXP](https://microsoft.github.io/reactxp/)
-* or find your own solution using [Lerna](https://lernajs.io/)
+* [ReactXP](https://microsoft.github.io/reactxp/) (Microsoft's Skype)
+* or [react-native-web](https://github.com/necolas/react-native-web) (Twitter)
 
 Smells like future front-end!
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-5VkI0dpHek" frameborder="0" allowfullscreen></iframe>
@@ -256,27 +256,28 @@ Smells like future front-end!
 
 Is React mature enough for WEB? Yes, the most.
 
-Is Electron mature enough for Desktop? If you like VSCode, Atom, Slack or some of [385 apps](https://electron.atom.io/apps/) and believe in GitHub - Yes.
+Is Electron mature enough for Desktop? If you like VSCode, Atom, Slack or some of [385 apps](https://electron.atom.io/apps/) and believe in GitHub (Microsoft) - Yes.
 
-Is React Native mature enough for Mobile? Instagram, Skype, Airbnb, Walmart and [other](https://facebook.github.io/react-native/showcase.html) already use it and you can read how they did it. And if you believe in Facebook - I believe Yes.
-
-## Demo Tech Stack
-
-* Front-End - react, react-native, redux, apollo-client, ant-design-mobile. Written using TypeScript.
-* Back-End - django, graphene, postgresql. Written using Python.
+Is React Native mature enough for Mobile? If you like Facebook, Instagram, Skype, Airbnb, Walmart and [other apps](https://facebook.github.io/react-native/showcase.html) and believe in Facebook - Yes.
 
 ## Who already use React this way?
 
 * [Build Wix app for 80 million users](https://www.youtube.com/watch?v=abSNo2P9mMM&feature=youtu.be)
-* [Build Skype with ReactXP](https://microsoft.github.io/reactxp/blog/2017/04/06/introducing-reactxp.html)
-* [Airbnb](https://www.youtube.com/watch?v=8qCociUB6aQ)
+* [Skype (using ReactXP)](https://www.youtube.com/watch?v=jFHuOhNAsw4)
+* [Twitter (using react-native-web)](https://www.youtube.com/watch?v=tFFn39lLO-U)
+* [Airbnb (using react-primitives)](https://www.youtube.com/watch?v=8qCociUB6aQ)
+
+
+## Demo Tech Stack
+
+* Front-End - react, react-native, redux, apollo-client. Written using TypeScript.
+* Back-End - django, graphene, postgresql. Written using Python.
 
 ## Fork me!
 
-* Mobile WEB - [https://github.com/react-cross-platform/react-shop](https://github.com/react-cross-platform/react-shop)
-* iOS and Android - [https://github.com/react-cross-platform/react-native-shop](https://github.com/react-cross-platform/react-native-shop)
-* Cross-platform monorepo with shared JS code - coming soon
-* GraphQL API - coming soon
+* Cross-platform ReactXP monorepo (WEB, iOS, Android) - [https://github.com/react-cross-platform/reactxp-shop](https://github.com/react-cross-platform/reactxp-shop)
+* Mobile WEB only - [https://github.com/react-cross-platform/react-shop](https://github.com/react-cross-platform/react-shop)
+* iOS and Android only - [https://github.com/react-cross-platform/react-native-shop](https://github.com/react-cross-platform/react-native-shop)
 
 ## Sponsorship
 
